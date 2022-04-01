@@ -79,6 +79,7 @@
 
    - name: init the database
      command: 'npm run initdb'
+     run_once: true
      args:
          chdir: /home/adminuser/bootcamp-app
 
