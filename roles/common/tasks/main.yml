@@ -1,12 +1,13 @@
 ---
-  - name: Print where the parameters came from
-    debug:
-            msg: "The vars arrived from {{ var_env }}."
-  
-  - name: role tasks
-    debug:
-            msg: "the port is {{ http_port }} and {{ database_server }} from role tasks"
-  
-  - name: node properties
-    debug:
-            msg: "The node name is: {{ ansible_nodename }}, Node IP is : {{ ansible_default_ipv4.address }}"
+
+- become: yes
+
+  tasks:
+    - name: Update apt-get repo and cache
+      become: yes
+      apt: update_cache=yes force_apt_get=yes cache_valid_time=3600
+
+    - name: install nodejs
+      apt:
+        name: nodejs
+        state: present
