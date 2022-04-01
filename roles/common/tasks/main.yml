@@ -47,7 +47,7 @@
                      
           # Okta configuration
            
-          OKTA_ORG_URL=https:{{ OKTAURL}}
+          OKTA_ORG_URL={{ OKTAURL}}
           OKTA_CLIENT_ID= {{ OKTAID }}
           OKTA_CLIENT_SECRET= {{ OKTASECRET  }}
            
