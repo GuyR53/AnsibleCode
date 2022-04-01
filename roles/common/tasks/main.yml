@@ -33,14 +33,14 @@
           
           
           # Postgres
-          PGHOST= "{{ PGHOST }}"
-          PGUSERNAME= {{ PGUSERNAMEE }}
-          PGDATABASE= {{ PGDBNAME }}
-          PGPASSWORD= {{ PGPASS }}
-          PGPORT= {{ PGPORT }}
+          PGHOST={{ PGHOST }}
+          PGUSERNAME={{ PGUSERNAMEE }}
+          PGDATABASE={{ PGDBNAME }}
+          PGPASSWORD={{ PGPASS }}
+          PGPORT={{ PGPORT }}
           
            # Host Configurations
-          HOST_URL= {{ HOST_URL }}
+          HOST_URL={{ HOST_URL }}
           COOKIE_ENCRYPT_PWD=superAwesomePasswordStringThatIsAtLeast32CharactersLong!
           NODE_ENV=development
 
