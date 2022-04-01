@@ -23,9 +23,9 @@
        force: yes
 
    - name: create .env file
-       copy:
-         dest: "../bootcamp-app/.env"
-         content: |
+     copy:
+        dest: "../bootcamp-app/.env"
+        content: |
            # Node Weight Tracker
            
            HOST_URL={{ HOST_URLL }}
