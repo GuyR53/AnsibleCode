@@ -21,3 +21,27 @@
        repo: "https://github.com/GuyR53/bootcamp-app.git"
        dest: /home/adminuser/bootcamp-app
        force: yes
+
+   - name: create .env file
+       copy:
+         dest: "../bootcamp-app/.env"
+         content: |
+           # Node Weight Tracker
+           
+           HOST_URL={{ HOST_URLL }}
+           COOKIE_ENCRYPT_PWD=superAwesomePasswordStringThatIsAtLeast32CharactersLong!
+           NODE_ENV=development
+           
+           # Okta configuration
+           
+           OKTA_ORG_URL=https:{{ OKTAURL}}
+           OKTA_CLIENT_ID={{ OKTAID }}
+           OKTA_CLIENT_SECRET={{ OKTASECRET  }}
+           
+           # Host configuration
+           
+           PGHOST={{ PGHOSTNAME }}
+           PGUSERNAME={{ PGUSERNAMEE }}
+           PGDATABASE={{ PGDBNAME }}
+           PGPASSWORD={{ PGPASS }}
+           PGPORT={{ PGPORTT }}
