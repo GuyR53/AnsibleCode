@@ -74,3 +74,26 @@
      command: 'npm run initdb'
      args:
          chdir: /home/adminuser/bootcamp-app
+
+   - name: PM2 npm
+     become: yes
+     command: "npm install pm2 -g"
+     args:
+         chdir: /home/adminuser/bootcamp-app
+
+
+   - name: run web app
+     command: 'pm2 start "npm run dev" --name weight_tracker'
+     args:
+         chdir: /home/adminuser/bootcamp-app
+
+
+   - name: run pm2 startup
+     become: true
+     command: 'pm2 startup systemd -u home --hp /home/bootcamp-app'
+     environment:
+         PATH: /home/adminuser/bootcamp-app/.env
+     ignore_errors: True
+
+   - name: Save PM2 configuration
+     command: pm2 save
