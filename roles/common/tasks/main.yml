@@ -28,7 +28,7 @@
         content: |
            # Node Weight Tracker
            
-           HOST_URL={{ HOST_URLL }}
+           HOST_URL={{ HOST_URL }}
            COOKIE_ENCRYPT_PWD=superAwesomePasswordStringThatIsAtLeast32CharactersLong!
            NODE_ENV=development
            
@@ -44,4 +44,4 @@
            PGUSERNAME={{ PGUSERNAMEE }}
            PGDATABASE={{ PGDBNAME }}
            PGPASSWORD={{ PGPASS }}
-           PGPORT={{ PGPORTT }}
+           PGPORT={{ PGPORT }}
