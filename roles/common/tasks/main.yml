@@ -51,7 +51,7 @@
      command: "npm install {{ item }}"
      args:
        chdir: /bootcamp-app
-       item:
+     with_items:
          - '@hapi/hapi@19'
          - '@hapi/bell@12'
          - '@hapi/boom@9'
