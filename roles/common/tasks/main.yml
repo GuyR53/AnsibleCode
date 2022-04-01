@@ -46,8 +46,19 @@
            PGPASSWORD={{ PGPASS }}
            PGPORT={{ PGPORT }}
 
-
-   - name: Install "coffee-script" node.js package globally.
-     community.general.npm:
-       name: coffee-script
-       global: yes
+   - name: install dependencies
+      become: yes
+      command: "npm install {{ item }}"
+      args:
+        chdir: /home/adminuser/bootcamp-app
+      with_items:
+        - '@hapi/hapi@19'
+        - '@hapi/bell@12'
+        - '@hapi/boom@9'
+        - '@hapi/cookie@11'
+        - '@hapi/inert@6'
+        - '@hapi/joi@17'
+        - '@hapi/vision@6'
+        - 'dotenv@8'
+        - 'ejs@3'
+        - 'postgres@1'
