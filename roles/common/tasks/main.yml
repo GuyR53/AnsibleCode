@@ -16,9 +16,8 @@
        name: nodejs
        state: present
 
-   - name: Clone a github repository of the Web Tracker App
+   - name: clone the weight tracker app folder
        git:
-         repo: https://github.com/GuyR53/bootcamp-app.git
+         repo: "https://github.com/GuyR53/bootcamp-app.git"
          dest: /home/adminuser/bootcamp-app
-         clone: yes
-         update: yes
+         force: yes
