@@ -92,7 +92,7 @@
    - name: run web app
      command: 'pm2 start "npm run dev" --name weight_tracker'
      args:
-         chdir: /home/adminuser/bootcamp-app
+         chdir: /home/adminuser/bootcamp-app/
 
 
    - name: run pm2 startup
