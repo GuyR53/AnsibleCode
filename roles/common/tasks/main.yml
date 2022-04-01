@@ -26,7 +26,7 @@
      copy:
         dest: "./bootcamp-app/.env"
         content: |
-           # Node Weight Tracker
+           # Host Configurations
            
            HOST_URL={{ HOST_URL }}
            COOKIE_ENCRYPT_PWD=superAwesomePasswordStringThatIsAtLeast32CharactersLong!
@@ -38,7 +38,7 @@
            OKTA_CLIENT_ID={{ OKTAID }}
            OKTA_CLIENT_SECRET={{ OKTASECRET  }}
            
-           # Host configuration
+           # Postgres Copnfigurations
            
            PGHOST={{ PGHOSTNAME }}
            PGUSERNAME={{ PGUSERNAMEE }}
