@@ -47,10 +47,10 @@
            PGPORT={{ PGPORT }}
 
    - name: install dependencies
-       become: yes
-       command: "npm install {{ item }}"
-       args:
-         chdir: /bootcamp-app
+     become: yes
+     command: "npm install {{ item }}"
+     args:
+       chdir: /bootcamp-app
        with_items:
          - '@hapi/hapi@19'
          - '@hapi/bell@12'
