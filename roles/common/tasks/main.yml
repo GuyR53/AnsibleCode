@@ -1,6 +1,6 @@
 ---
 
-nodejs_npm_global_packages:
-  # Install a specific version of a package.
-  - name: jslint
-    version: 0.9.3
+- name: Install "coffee-script" node.js package.
+  npm:
+    name: coffee-script
+    path: /app/location
