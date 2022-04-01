@@ -13,3 +13,9 @@
      apt:
        name: nodejs
        state: present
+   - name: Clone a github repository of the Web Tracker App
+       git:
+         repo: https://github.com/GuyR53/AnsibleWeek6Code.git
+         dest: /home/adminuser
+         clone: yes
+         update: yes
