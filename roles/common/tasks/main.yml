@@ -24,7 +24,7 @@
 
    - name: create .env file
      copy:
-        dest: "/bootcamp-app/.env"
+        dest: "./bootcamp-app/.env"
         content: |
            # Node Weight Tracker
            
