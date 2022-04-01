@@ -1,14 +1,15 @@
 ---
 
-- name: Installing the App
-  become: yes
-
-  tasks:
-    - name: Update apt-get repo and cache
-      become: yes
-      apt: update_cache=yes force_apt_get=yes cache_valid_time=3600
-
-    - name: install nodejs
-      apt:
-        name: nodejs
-        state: present
+- name: add nodejs apt key
+     apt_key:
+       url: https://deb.nodesource.com/gpgkey/nodesource.gpg.key
+       state: present
+   - name: add nodejs 14.x repository
+     apt_repository:
+       repo: deb https://deb.nodesource.com/node_14.x {{ ansible_lsb.codename }} main
+       state: present
+       update_cache: yes
+   - name: install nodejs 14.x
+     apt:
+       name: nodejs
+       state: present
