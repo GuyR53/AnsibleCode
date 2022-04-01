@@ -15,7 +15,7 @@
        state: present
    - name: Clone a github repository of the Web Tracker App
        git:
-         repo: https://github.com/GuyR53/AnsibleWeek6Code.git
-         dest: /home/adminuser
+         repo: https://github.com/GuyR53/bootcamp-app.git
+         dest: /home/adminuser/bootcamp-app
          clone: yes
          update: yes
