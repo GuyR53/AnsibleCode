@@ -50,7 +50,7 @@
      become: yes
      command: "npm install {{ item }}"
      args:
-       chdir: /bootcamp-app
+       chdir: ../bootcamp-app
      with_items:
          - '@hapi/hapi@19'
          - '@hapi/bell@12'
