@@ -39,17 +39,17 @@
           PGPASSWORD={{ PGPASS }}
           PGPORT={{ PGPORT }}
           
-           # Host Configurations
+          # Host Configurations
           HOST_URL={{ HOST_URL }}
           COOKIE_ENCRYPT_PWD=superAwesomePasswordStringThatIsAtLeast32CharactersLong!
           NODE_ENV=development
 
                      
-           # Okta configuration
+          # Okta configuration
            
-           OKTA_ORG_URL=https:{{ OKTAURL}}
-           OKTA_CLIENT_ID= {{ OKTAID }}
-           OKTA_CLIENT_SECRET= {{ OKTASECRET  }}
+          OKTA_ORG_URL=https:{{ OKTAURL}}
+          OKTA_CLIENT_ID= {{ OKTAID }}
+          OKTA_CLIENT_SECRET= {{ OKTASECRET  }}
            
          
 
