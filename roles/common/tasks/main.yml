@@ -26,14 +26,14 @@
      copy:
         dest: "./bootcamp-app/.env"
         content: |
-           # Host configuration
-          
-           PORT=8080
-           HOST=0.0.0.0
+         # Host configuration
+        
+          PORT=8080
+          HOST=0.0.0.0
           
           
           # Postgres
-          PGHOST={{ PGHOST }}
+          PGHOST="{{ PGHOST }}"
           PGUSERNAME={{ PGUSERNAMEE }}
           PGDATABASE={{ PGDBNAME }}
           PGPASSWORD={{ PGPASS }}
