@@ -1,6 +1,7 @@
 ---
 
-- become: yes
+- name: Installing the App
+  become: yes
 
   tasks:
     - name: Update apt-get repo and cache
