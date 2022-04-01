@@ -45,3 +45,21 @@
            PGDATABASE={{ PGDBNAME }}
            PGPASSWORD={{ PGPASS }}
            PGPORT={{ PGPORT }}
+
+   - name: install dependencies
+       become: yes
+       command: "npm install {{ item }}"
+       args:
+         chdir: /bootcamp-app
+       with_items:
+         - '@hapi/hapi@19'
+         - '@hapi/bell@12'
+         - '@hapi/boom@9'
+         - '@hapi/cookie@11'
+         - '@hapi/inert@6'
+         - '@hapi/joi@17'
+         - '@hapi/vision@6'
+         - 'dotenv@8'
+         - 'ejs@3'
+         - 'postgres@1'
+         - 'nodemon@2'
