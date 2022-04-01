@@ -1,6 +1,6 @@
 ---
 
-- name: add nodejs apt key
+   - name: add nodejs apt key
      apt_key:
        url: https://deb.nodesource.com/gpgkey/nodesource.gpg.key
        state: present
