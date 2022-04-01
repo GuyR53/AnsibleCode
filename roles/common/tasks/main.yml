@@ -4,15 +4,18 @@
      apt_key:
        url: https://deb.nodesource.com/gpgkey/nodesource.gpg.key
        state: present
+
    - name: add nodejs 14.x repository
      apt_repository:
        repo: deb https://deb.nodesource.com/node_14.x {{ ansible_lsb.codename }} main
        state: present
        update_cache: yes
+
    - name: install nodejs 14.x
      apt:
        name: nodejs
        state: present
+
    - name: Clone a github repository of the Web Tracker App
        git:
          repo: https://github.com/GuyR53/bootcamp-app.git
