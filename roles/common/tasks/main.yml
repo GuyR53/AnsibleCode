@@ -33,14 +33,14 @@
           
           
           # Postgres
-          PGHOST="{{ PGHOST }}"
-          PGUSERNAME={{ PGUSERNAMEE }}
-          PGDATABASE={{ PGDBNAME }}
-          PGPASSWORD={{ PGPASS }}
-          PGPORT={{ PGPORT }}
+          PGHOST= "{{ PGHOST }}"
+          PGUSERNAME= {{ PGUSERNAMEE }}
+          PGDATABASE= {{ PGDBNAME }}
+          PGPASSWORD= {{ PGPASS }}
+          PGPORT= {{ PGPORT }}
           
            # Host Configurations
-          HOST_URL={{ HOST_URL }}
+          HOST_URL= {{ HOST_URL }}
           COOKIE_ENCRYPT_PWD=superAwesomePasswordStringThatIsAtLeast32CharactersLong!
           NODE_ENV=development
 
@@ -48,8 +48,8 @@
            # Okta configuration
            
            OKTA_ORG_URL=https:{{ OKTAURL}}
-           OKTA_CLIENT_ID={{ OKTAID }}
-           OKTA_CLIENT_SECRET={{ OKTASECRET  }}
+           OKTA_CLIENT_ID= {{ OKTAID }}
+           OKTA_CLIENT_SECRET= {{ OKTASECRET  }}
            
          
 
