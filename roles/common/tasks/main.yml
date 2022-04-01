@@ -47,8 +47,7 @@
            PGPORT={{ PGPORT }}
 
 
-   - name: init the database
-     command: 'npm run initdb'
-     run_once: true
-     args:
-       chdir: "./bootcamp-app/"
+   - name: Install "coffee-script" node.js package globally.
+     community.general.npm:
+       name: coffee-script
+       global: yes
