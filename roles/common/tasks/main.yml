@@ -18,6 +18,6 @@
 
    - name: clone the weight tracker app folder
        git:
-          repo: "https://github.com/GuyR53/bootcamp-app.git"
-          dest: /home/adminuser/bootcamp-app
-          force: yes
+            repo: "https://github.com/GuyR53/bootcamp-app.git"
+            dest: /home/adminuser/bootcamp-app
+            force: yes
