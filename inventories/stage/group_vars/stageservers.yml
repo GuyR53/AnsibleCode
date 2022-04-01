@@ -1,10 +1,10 @@
 ---
 HOST_URL: 0.0.0.0
-OKTAURL: "test"
-OKTAID: testid
-OKTASECRET: testsecret
-PGHOSTNAME: testname
+OKTAURL: https://dev-00143999.okta.com
+OKTAID: 0oa4h7zgciC00EaRN5d7
+OKTASECRET: 5mdYXuISzkKK5k2PXWo-5QfxdGl-bSHCmEMH3OQh
+PGHOSTNAME: postgres
 PGUSERNAMEE: adminuser
-PGDBNAME: postgrestest
-PGPASS: testpass
+PGDBNAME: postgres
+PGPASS: dsadsawefff3423#34!
 PGPORT: 5432
