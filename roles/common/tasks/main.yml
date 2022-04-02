@@ -97,11 +97,10 @@
 
 
    - name: run pm2 startup
-     become: true
-     command: 'pm2 startup systemd -u home --hp /home/bootcamp-app'
-     environment:
-         PATH: /home/adminuser/bootcamp-app/
-     ignore_errors: True
+     shell:
+       cmd: pm2 startup
+       chdir: /home/adminuser/bootcamp-app
+
 
    - name: Save PM2 configuration
      command: pm2 save
