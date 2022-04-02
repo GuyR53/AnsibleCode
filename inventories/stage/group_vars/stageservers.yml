@@ -1,8 +1,8 @@
 ---
-HOST_URL: http://20.221.80.17:8080
+HOST_URL: http://20.118.5.49:8080
 OKTAURL: https://dev-00143999.okta.com
-OKTAID: 0oa4hll5ulc02xbjT5d7
-OKTASECRET: BBm-4aOEzzHU3Sl2wkpjMC-bF12BbH4mDX4dKMbf
+OKTAID: 0oa4hlph2pvxNcr7k5d7
+OKTASECRET: vlqDd5hqzw99jcnNtXnXi7eX6uapTtTWzAfXJeKT
 PGHOST: 10.0.1.4
 PGUSERNAMEE: postgres
 PGDBNAME: postgres
