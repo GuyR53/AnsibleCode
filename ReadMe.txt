@@ -12,9 +12,9 @@ Structure:
 │   │   ├── group_vars
 │   │   │   └── stageservers.yml
 │   │   └── host
-│   └── test
+│   └── prod
 │       ├── group_vars
-│       │   └── testservers.yml
+│       │   └── prodservers.yml
 │       └── hosts
 ├── main_playbook.yml
 └── roles
