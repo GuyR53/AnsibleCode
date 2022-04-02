@@ -1,10 +1,10 @@
 ---
-HOST_URL: http://20.118.5.49:8080
-OKTAURL: https://dev-00143999.okta.com
-OKTAID: 0oa4hlph2pvxNcr7k5d7
-OKTASECRET: vlqDd5hqzw99jcnNtXnXi7eX6uapTtTWzAfXJeKT
+HOST_URL: http://<LoadBalancerIP>:8080
+OKTAURL: https://<YourOktaDomain>
+OKTAID: <YourOktaID>
+OKTASECRET: <YourOktaSecret>
 PGHOST: 10.0.1.4
 PGUSERNAMEE: postgres
 PGDBNAME: postgres
-PGPASS: dsadsawefff3423#34!
+PGPASS: <YourPasswordFromAbove>
 PGPORT: 5432
