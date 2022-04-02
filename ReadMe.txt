@@ -2,7 +2,7 @@
 
 commands:
 ansible-playbook -v -i inventories/stage --extra-vars server_env_group="stageservers" main_playbook.yml
-ansible-playbook -v -i inventories/test --extra-vars server_env_group="prodservers" main_playbook.yml
+ansible-playbook -v -i inventories/prod --extra-vars server_env_group="prodservers" main_playbook.yml
 
 Structure:
 
