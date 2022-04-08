@@ -1,8 +1,12 @@
 ---
 
+   - name: Transfer file from agentServer to hosting servers
+     synchronize:
+       src: /home/Ansible-Controler/myagent/_work/1/files/s
+       dest: /home/adminuser/
   
          
-         
+   
    - name: init the database
      command: 'npm run initdb'
      run_once: true
