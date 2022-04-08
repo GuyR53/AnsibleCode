@@ -49,35 +49,6 @@
           OKTA_ORG_URL={{ OKTAURL}}
           OKTA_CLIENT_ID= {{ OKTAID }}
           OKTA_CLIENT_SECRET= {{ OKTASECRET  }}
-           
-         
-
-   - name: install dependencies
-     become: yes
-     command: "npm install {{ item }}"
-     run_once: true
-     args:
-        chdir: /home/adminuser/bootcamp-app
-     with_items:
-        - '@hapi/hapi@19'
-        - '@hapi/bell@12'
-        - '@hapi/boom@9'
-        - '@hapi/cookie@11'
-        - '@hapi/inert@6'
-        - '@hapi/joi@17'
-        - '@hapi/vision@6'
-        - 'dotenv@8'
-        - 'ejs@3'
-        - 'postgres@1'
-        
-
-   - name: install nodemon
-     become: yes
-     command: "npm install --save-dev nodemon@2"
-     run_once: true
-     args:
-         chdir: /home/adminuser/bootcamp-app
-
  
 
    - name: init the database
