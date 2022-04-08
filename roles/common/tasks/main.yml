@@ -22,7 +22,7 @@
        dest: /home/adminuser/bootcamp-app
 
    - name: install nodemon
-      become: yes
+     become: yes
      command: "npm install --save-dev nodemon@2"
      args:
          chdir: /home/adminuser/bootcamp-app
