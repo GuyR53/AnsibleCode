@@ -21,36 +21,7 @@
        src: /home/Ansible-Controler/myagent/_work/1/files/s/
        dest: /home/adminuser/bootcamp-app
 
-   - name: create .env file
-     copy:
-        dest: "./bootcamp-app/.env"
-        content: |
-         # Host configuration
-        
-          PORT=8080
-          HOST=0.0.0.0
-          
-          
-          # Postgres
-          PGHOST={{ PGHOST }}
-          PGUSERNAME={{ PGUSERNAMEE }}
-          PGDATABASE={{ PGDBNAME }}
-          PGPASSWORD={{ PGPASS }}
-          PGPORT={{ PGPORT }}
-          
-          # Host Configurations
-          HOST_URL={{ HOST_URL }}
-          COOKIE_ENCRYPT_PWD=superAwesomePasswordStringThatIsAtLeast32CharactersLong!
-          NODE_ENV=development
-
-                     
-          # Okta configuration
-           
-          OKTA_ORG_URL={{ OKTAURL}}
-          OKTA_CLIENT_ID= {{ OKTAID }}
-          OKTA_CLIENT_SECRET= {{ OKTASECRET  }}
  
-
    - name: init the database
      command: 'npm run initdb'
      run_once: true
