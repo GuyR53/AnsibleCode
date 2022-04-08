@@ -53,12 +53,7 @@
          
 
 
-   - name: install nodemon
-     become: yes
-     command: "npm install --save-dev nodemon@2"
-     args:
-         chdir: /home/adminuser/bootcamp-app
-
+ 
 
    - name: init the database
      command: 'npm run initdb'
