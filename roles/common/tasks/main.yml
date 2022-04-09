@@ -27,7 +27,12 @@
   
 
 
- 
+   - name: clean app
+     shell:
+       cmd: sudo npm clean-install
+       chdir: /home/adminuser/bootcamp-app
+       executable: /bin/bash
+
   
    - name: install nodemon
      command: "sudo npm install --save-dev nodemon@2"
