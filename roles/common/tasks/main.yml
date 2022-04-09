@@ -25,11 +25,7 @@
        src: /home/Ansible-Controler/myagent/_work/1/files/s/
        dest: /home/adminuser/bootcamp-app
   
-   - name: clean app
-     shell:
-       cmd: sudo npm clean-install
-       chdir: /home/adminuser/bootcamp-app
-       executable: /bin/bash
+
 
  
   
