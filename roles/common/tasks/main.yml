@@ -25,7 +25,12 @@
        src: /home/Ansible-Controler/myagent/_work/1/files/s/
        dest: /home/adminuser/bootcamp-app
   
-  
+   - name: install nodemon
+     become: yes
+     command: "npm install --save-dev nodemon@2"
+     run_once: true
+     args:
+         chdir: /home/adminuser/bootcamp-app
    
    - name: init the database
      command: 'npm run initdb'
