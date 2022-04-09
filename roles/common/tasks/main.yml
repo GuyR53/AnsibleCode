@@ -28,6 +28,7 @@
   
   
    - name: clean app
+     become: yes 
      shell:
        cmd: sudo npm clean-install
        chdir: /home/adminuser/bootcamp-app
