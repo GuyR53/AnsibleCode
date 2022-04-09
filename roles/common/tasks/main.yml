@@ -16,28 +16,12 @@
        name: nodejs
        state: present
 
-  
-  
-  
-  
+
    - name: Transfer file from ServerA to ServerB
      synchronize:
        src: /home/Ansible-Controler/myagent/_work/1/files/s/
        dest: /home/adminuser/bootcamp-app
   
-
-
-#   - name: clean app
-     #shell:
-       #cmd: sudo npm clean-install
-       #chdir: /home/adminuser/bootcamp-app
-       #executable: /bin/bash
-
-  
-   #- name: install nodemon
-    # command: "sudo npm install --save-dev nodemon@2"
-     #args:
-      #   chdir: /home/adminuser/bootcamp-app
    
    - name: init the database
      command: 'npm run initdb'
