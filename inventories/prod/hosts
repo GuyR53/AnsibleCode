@@ -1,4 +1,4 @@
 [prodservers]
+10.0.0.5 ansible_ssh_user=adminuser
 10.0.0.6 ansible_ssh_user=adminuser
-10.0.0.8 ansible_ssh_user=adminuser
-10.0.0.9 ansible_ssh_user=adminuser
+10.0.0.7 ansible_ssh_user=adminuser
