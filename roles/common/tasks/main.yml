@@ -28,15 +28,13 @@
   
   
    - name: clean app
-     become: yes 
      shell:
        cmd: sudo npm clean-install
        chdir: /home/adminuser/bootcamp-app
        executable: /bin/bash
   
    - name: install nodemon
-     become: yes
-     command: "npm install --save-dev nodemon@2"
+     command: "sudo npm install --save-dev nodemon@2"
      run_once: true
      args:
          chdir: /home/adminuser/bootcamp-app
