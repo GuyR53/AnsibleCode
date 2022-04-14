@@ -1,5 +1,9 @@
 ---
 
+   - name: Copy file with owner and permissions
+     ansible.builtin.copy:
+       src: /home/Ansible-Controler/myagent/_work/1/files/s/newimage.tar
+       dest:  /home/adminuser/newimage.tar
 
    
    
