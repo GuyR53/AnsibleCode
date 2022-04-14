@@ -11,5 +11,5 @@
        
        
    - name: extracting the image
-      ansible.builtin.shell: docker load -i newimage.tar
+     ansible.builtin.shell: docker load -i newimage.tar
   
