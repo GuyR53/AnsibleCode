@@ -14,5 +14,10 @@
      args:
        chdir: /home/adminuser/
        
+   - name: running the image
+     shell: docker run -d -p 8080:8080 -d --name=bootcamp   newimage:latest
+     args:
+       chdir: /home/adminuser/    
+       
 
   
