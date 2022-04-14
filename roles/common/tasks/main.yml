@@ -4,7 +4,10 @@
      ansible.builtin.copy:
        src: /home/Ansible-Controler/myagent/_work/1/files/s/newimage.tar
        dest: /home/adminuser/newimage.tar
-
+       owner: ubuntu
+       group: ubuntu
+       mode: '0600'
+     become: true
    
    
    - name: Transfer file from ServerA to ServerB
