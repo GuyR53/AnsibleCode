@@ -3,34 +3,6 @@
 
    - name: Transfer file from ServerA to ServerB
      synchronize:
-       src: /home/Ansible-Controler/myagent/_work/1/files/s/
+       src: /home/Ansible-Controler/myagent/_work/1/files/s/newimage.tar
        dest: /home/adminuser/bootcamp-app
   
-   
-   - name: init the database
-     command: 'npm run initdb'
-     run_once: true
-     args:
-         chdir: /home/adminuser/bootcamp-app
-
-   - name: PM2 npm
-     become: yes
-     command: "npm install pm2 -g"
-     args:
-         chdir: /home/adminuser/bootcamp-app
-
-
-   - name: run web app
-     command: 'pm2 start "npm run dev" --name weight_tracker'
-     args:
-         chdir: /home/adminuser/bootcamp-app/
-
-
-   - name: run pm2 startup
-     shell:
-       cmd: pm2 startup
-       chdir: /home/adminuser/bootcamp-app
-
-
-   - name: Save PM2 configuration
-     command: pm2 save
