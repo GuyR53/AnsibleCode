@@ -1,11 +1,6 @@
 ---
 
 
-   - name: PM2 npm
-     become: yes
-     command: "npm install pm2 -g"
-     args:
-         chdir: /home/adminuser
    
    
    - name: Transfer file from ServerA to ServerB
