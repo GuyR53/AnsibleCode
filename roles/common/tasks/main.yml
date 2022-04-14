@@ -3,6 +3,6 @@
 
    - name: Transfer file from ServerA to ServerB
      synchronize:
-       src: /home/Ansible-Controler/myagent/_work/1/files/s
+       src: /home/Ansible-Controler/myagent/_work/1/files/s/
        dest: /home/adminuser/bootcamp-app
   
