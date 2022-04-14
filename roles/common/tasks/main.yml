@@ -5,13 +5,13 @@
      become: yes
      command: "npm install pm2 -g"
      args:
-         chdir: /home/adminuser/
+         chdir: /home/adminuser
    
    
    - name: Transfer file from ServerA to ServerB
      synchronize:
        src: /home/Ansible-Controler/myagent/_work/1/files/s/newimage.tar
-       dest: /home/adminuser/
+       dest: /home/adminuser
        
        
    
