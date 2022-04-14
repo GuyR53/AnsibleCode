@@ -8,8 +8,11 @@
        src: /home/Ansible-Controler/myagent/_work/1/s/newimage.tar
        dest: /home/adminuser/
     
+   
+   - name: untar the file
+     shell: docker load -i newimage.tar
+     args:
+       chdir: /home/adminuser/
        
-       
-   - name: extracting the image
-     ansible.builtin.shell: docker load -i newimage.tar
+
   
