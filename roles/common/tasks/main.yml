@@ -26,5 +26,10 @@
      args:
        chdir: /home/adminuser/    
        
+   - name: docker would be running always
+     shell: docker update --restart unless-stopped bootcamp 
+     args:
+       chdir: /home/adminuser/      
+   
 
   
