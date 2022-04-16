@@ -31,7 +31,7 @@
    
        
    - name: docker would be running always
-     shell: docker update --restart unless-stopped bootcamp 
+     shell: sudo docker update --restart unless-stopped $(docker ps -qa)
      args:
        chdir: /home/adminuser/      
    
