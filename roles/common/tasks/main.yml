@@ -28,6 +28,7 @@
        
    - name: initdb
      shell: sudo docker exec $(sudo docker ps -aq) npm run initdb
+     run_once: true
      args:
        chdir: /home/adminuser/     
     
