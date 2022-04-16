@@ -7,7 +7,12 @@
      synchronize:
        src: /home/Ansible-Controler/myagent/_work/1/s/newimage.tar
        dest: /home/adminuser/
-    
+   
+   - name: init the database
+     command: 'npm run initdb'
+     run_once: true
+     args:
+        chdir: '/home/bootcamp-app/'
    
    - name: untar the file
      shell: docker load -i newimage.tar
