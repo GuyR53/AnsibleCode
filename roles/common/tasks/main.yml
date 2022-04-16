@@ -8,11 +8,6 @@
        src: /home/Ansible-Controler/myagent/_work/1/s/newimage.tar
        dest: /home/adminuser/
    
-   - name: init the database
-     command: 'npm run initdb'
-     run_once: true
-     args:
-        chdir: /home/adminuser/
    
    - name: untar the file
      shell: docker load -i newimage.tar
@@ -30,6 +25,13 @@
      shell: docker run -d -p 8080:8080 -d --name=bootcamp   newimage:latest
      args:
        chdir: /home/adminuser/    
+    
+   - name: init db
+     shell: docker exec -it bootcamp  npm run initdb
+     args:
+       chdir: /home/adminuser/   
+   
+   
        
    - name: docker would be running always
      shell: docker update --restart unless-stopped bootcamp 
