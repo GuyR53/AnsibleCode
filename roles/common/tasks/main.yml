@@ -26,10 +26,7 @@
      args:
        chdir: /home/adminuser/    
     
-   - name: init db
-     shell: docker exec -it bootcamp  npm run initdb
-     args:
-       chdir: /home/adminuser/   
+
    
    
        
