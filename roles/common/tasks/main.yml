@@ -12,7 +12,7 @@
      command: 'npm run initdb'
      run_once: true
      args:
-        chdir: '/home/bootcamp-app/'
+        chdir: '/home/adminuser/'
    
    - name: untar the file
      shell: docker load -i newimage.tar
