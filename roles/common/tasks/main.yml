@@ -22,7 +22,7 @@
    
    
    - name: running the image
-     shell: docker run -d -p 8080:8080 -d --name=bootcamp   newimage:latest
+     shell: sudo docker run -d -p 8080:8080 newimage -t bootcamp
      args:
        chdir: /home/adminuser/    
     
