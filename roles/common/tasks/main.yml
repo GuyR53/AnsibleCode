@@ -24,7 +24,12 @@
    - name: running the image
      shell: sudo docker run -d -p 8080:8080 newimage 
      args:
-       chdir: /home/adminuser/    
+       chdir: /home/adminuser/ 
+       
+   - name: running the image
+     shell: sudo docker exec $(sudo docker ps -aq) npm run initdb
+     args:
+       chdir: /home/adminuser/     
     
 
    
