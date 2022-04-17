@@ -25,17 +25,8 @@
      shell: sudo docker run -d -p 8080:8080 newimage 
      args:
        chdir: /home/adminuser/ 
-       
-   #- name: initdb
-     #shell: sudo docker exec $(sudo docker ps -aq) npm run initdb
-    # run_once: true
-     #args:
-       #chdir: /home/adminuser/     
-    
-
+          
    
-   
-       
    - name: docker would be running always
      shell: sudo docker update --restart unless-stopped $(docker ps -qa)
      args:
